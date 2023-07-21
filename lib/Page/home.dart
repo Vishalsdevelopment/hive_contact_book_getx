@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                         GetXClass.searchList.isNotEmpty) ||
                     !GetXClass.isSearch.value
                 ? ListView.separated(
-                    padding: const EdgeInsets.only(top: 145),
+                    padding: const EdgeInsets.only(top: 160),
                     shrinkWrap: true,
                     itemBuilder: (context, index) => GetXClass.isSearch.value
                         ? CustomTile(
@@ -50,11 +50,9 @@ class HomePage extends StatelessWidget {
                         : GetXClass.contactsList.length)
                 : const Center(child: Text('No result Found')),
           ),
-          CustomAppBar(appBarHeight: 145, screenWidth: width),
+          CustomAppBar(appBarHeight: 160, screenWidth: width),
         ],
       ),
     );
   }
-
-
 }
